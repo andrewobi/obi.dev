@@ -1,0 +1,24 @@
+:root{
+
+    /* Gradient 1 */
+    --tufts-blue: #3c91e6;
+    --black-coffee: #342e37;
+    --shamrock-green: #399e5a;
+    --baby-powder: #fafffd;
+    --mandarin: #fa824c;
+
+    /* Pallet 2 */
+
+    --neon-blue: #6874e8;
+    --onyx: #39393a;
+    --yellow-red: #ffcb77;
+    --floral-white: #fef9ef;
+    --light-coral: #fe6d73;
+
+
+    --helvetica: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    --open-sans: 'Open Sans', sans-serif;
+
+    /* Media Breakpoints */
+
+}
