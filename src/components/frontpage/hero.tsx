@@ -2,14 +2,14 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
-import FrontCard from "../frontpage/card"
+import Card from "../frontpage/card"
 
 
 const Hero = () => (
-    <div id="hero">
+    <section id="hero">
         Test
-        <FrontCard />
-    </div>
+        <Card title="Hello!" secondary="this is a test!" />
+    </section>
 )
 
 

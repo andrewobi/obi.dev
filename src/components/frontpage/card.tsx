@@ -1,10 +1,15 @@
 import React from "react";
+import {Link} from "gatsby";
 
-const FrontCard = () => (
-    <div class="heroblock">
-        <h2>Hello! Nice to meet you!</h2>
-        <h4>I develop web applications.</h4>
-    </div>
+const Card = (props) => (
+    <article>
+        <h2>
+            <Link to={`/$ {props.slink} `} >{props.title}</Link>
+        </h2>
+        <h3>{props.secondary}</h3>
+
+        <p>{props.text}</p>
+    </article>
 )
 
-export default FrontCard;
+export default Card;
