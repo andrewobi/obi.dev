@@ -1,0 +1,17 @@
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+
+    nav{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+        a{
+            text-decoration: none;
+            font-weight: bold;
+            margin: 0 20px;
+            color: var(--onyx)
+        }
+    }
+}

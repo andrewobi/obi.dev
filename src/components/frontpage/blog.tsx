@@ -1,12 +1,15 @@
-import { graphql, useStaticQuery, Link } from "gatsby";
-import Card from "../frontpage/card";
+import { graphql, useStaticQuery} from "gatsby";
+import Card from "../util/card";
 import React from "react";
+
+import * as blogStyle from "./blog.module.scss"
 
 const BlogSection = () => {
   const data = useStaticQuery(graphql`
     query{
       allMdx(limit: 8) {
         nodes{
+          id
           frontmatter{
             title
             summary
@@ -23,7 +26,7 @@ const BlogSection = () => {
     return <div>Error</div>
   }
 
-  return <section>{data.allMdx.nodes.map(({frontmatter, slug}) => ( <Card title={frontmatter.title} sLink={slug} text={frontmatter.summary} />))}</section>
+  return <section className={blogStyle.section}>{data.allMdx.nodes.map(({frontmatter, slug, id}) => ( <div className={blogStyle.child}><Card text={frontmatter.summary} slink={slug} title={frontmatter.title} key={id} /></div>))}</section>
 }
 
 export default BlogSection

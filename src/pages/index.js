@@ -1,18 +1,20 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
-import Image from "../components/image"
 import Seo from "../components/seo"
 import Hero from "../components/frontpage/hero"
+import ProjSection from "../components/frontpage/projects"
 import BlogSection from "../components/frontpage/blog"
+import ExperimSection from "../components/frontpage/experiments"
 
 const IndexPage = () => (
   <Layout>
     <Seo title="Home" />
     <Hero />
+    <ProjSection />
     <BlogSection />
-    <Link to="/page-2/">Go to page 2</Link> <br />
+    <ExperimSection />
+    <br />
   </Layout>
 )
 

@@ -1,0 +1,14 @@
+.section{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+      "Title Title Title"
+      ". . .";
+
+      .Title{
+          grid-area: Title;
+          text-align: center;
+      }
+}

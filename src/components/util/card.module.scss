@@ -1,0 +1,38 @@
+article{
+    background: var(--baby-powder);
+    color: var(--black-coffee);
+    border-radius: 20px;
+    box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .5) ;
+    max-width: 350px;
+    margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.cardText{
+    font-size: .85rem;
+    padding: 0 15px 15px;
+
+    p{
+        font-size: inherit;
+        margin: 0;
+        opacity: .8;
+    }
+}
+
+.cardTitle{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    text-transform: capitalize;
+
+    h1, h2, h3, h4, h5 {
+        padding: 0;
+        margin: 0;
+        font-size: 1.1rem;
+    }
+
+    a{
+        text-decoration: none;
+        color: var(--black-coffee);
+    }
+}

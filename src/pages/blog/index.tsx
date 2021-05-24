@@ -8,7 +8,7 @@ const BlogIndex = () => (
   <Layout>
     <SEO title="Blog Home" />
     <h1>Hi people</h1>
-    <Link to="/blog/001-hello-world/">Go to page 2</Link> <br />
+    <Link to="/blog/posts/hello-world/">Go to page 2</Link> <br />
   </Layout>
 )
 
