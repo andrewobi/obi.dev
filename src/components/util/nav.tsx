@@ -6,6 +6,7 @@ import github from "../../images/github.svg"
 
 const Header= () => (
     <header className={navStyle.navbar}>
+        <Link to="/">Andrew Obi</Link>
         <nav>
             <a href="#projects">Projects</a> 
             <a href="#templates">Templates</a>

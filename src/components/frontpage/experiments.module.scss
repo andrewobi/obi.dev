@@ -1,17 +1,12 @@
 .section{
-    margin: 0 auto;
-    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
     grid-template-areas: 
-    "Title Title Title Title"
+    ". . . ."
     ". . . .";
-
-    .Title{
-        text-align: center;
-        grid-area: Title;
-    }
 }

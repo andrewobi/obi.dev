@@ -5,7 +5,7 @@ import React from "react";
 import * as projStyles from "./projects.module.scss"
 
 const ProjSection = () => (
-    <section className={projStyles.section}>
+    <section className={projStyles.section} id="projects">
         <header className={projStyles.Title}>
             <h1>Projects</h1>
         </header>

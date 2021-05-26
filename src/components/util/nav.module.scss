@@ -1,17 +1,24 @@
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    padding: 1.5rem 0;
+    margin-left: auto;
+    margin-right: auto;
 
     nav{
         display: flex;
         justify-content: space-around;
         align-items: center;
 
-        a{
-            text-decoration: none;
-            font-weight: bold;
-            margin: 0 20px;
-            color: var(--onyx)
-        }
+        
+    }
+
+    a{
+        text-decoration: none;
+        font-weight: bold;
+        margin: 0 20px;
+        color: var(--onyx)
     }
 }
