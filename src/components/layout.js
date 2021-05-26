@@ -33,6 +33,8 @@ const Layout = ({ children }) => {
         <footer
           style={{
             marginTop: `2rem`,
+            width: `90%`,
+            margin: `0 auto`,
           }}
         >
           © {new Date().getFullYear()} Andrew Obi

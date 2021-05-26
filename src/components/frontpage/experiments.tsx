@@ -9,7 +9,7 @@ const ExperimSection = () => {
 
 
 
-    return <section className={experimStyles.section} id="templates"><ImgCard headerImg="test.jpg" title="Test" text="test summary" /></section>
+    return <section className={experimStyles.section} id="templates"><h1 className={experimStyles.Title}>Experiments</h1><ImgCard headerImg="test.jpg" title="Test" text="test summary" /></section>
 }
 
 export default ExperimSection
