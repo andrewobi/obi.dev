@@ -2,7 +2,7 @@ import { graphql, useStaticQuery} from "gatsby";
 import Card from "../util/card";
 import React from "react";
 
-import * as blogStyle from "./blog.module.scss"
+import * as blogStyle from "./blog.module.scss";
 
 const BlogSection = () => {
   const data = useStaticQuery(graphql`

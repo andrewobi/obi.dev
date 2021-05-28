@@ -10,6 +10,7 @@ import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import Footer from "./util/footer"
 import "./layout.css"
 import 'normalize.css'
 import './variables.css'
@@ -30,15 +31,7 @@ const Layout = ({ children }) => {
       <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
       <div>
         <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-            width: `90%`,
-            margin: `0 auto`,
-          }}
-        >
-          © {new Date().getFullYear()} Andrew Obi
-        </footer>
+        <Footer />
       </div>
     </>
   )
