@@ -2,7 +2,11 @@ import React from "react"
 import PropTypes from "prop-types"
 import { useStaticQuery, graphql } from "gatsby"
 
+import Header from "../util/nav"
+import FooterSection from "../util/footer"
 import Seo from "../seo"
+
+import * as layoutStyles from "./layout.module.scss"
 
 
 const BlogLayout = ({ children }) => {
@@ -19,7 +23,9 @@ const BlogLayout = ({ children }) => {
     return(
         <>
         <Seo title={data.mdx.frontmatter?.title || `Title`} />
-        <main>{children}</main>
+        <Header />
+        <main className={layoutStyles.posts}>{children}</main>
+        <FooterSection />
         </>
     )
 }
